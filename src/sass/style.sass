@@ -26,6 +26,7 @@ $color-grey-text: #ACACAC
 html
     font-family: Roboto
     font-weight: regular
+    background-color: #F5F5F5
 
 .container
     max-width: 1530px
@@ -175,6 +176,14 @@ html
     position: relative
     height: 985px
     background-color: F5F5F5
+    &__left-lamp
+        position: absolute
+        top: 194px
+        left: -140px
+    &__right-arrow
+        position: absolute
+        top: 153px
+        right: -140px
     &__purple-box
         display: flex
         flex-direction: row
@@ -347,21 +356,27 @@ html
 .student-say
     position: relative
     height: 689px
-    background-color: #F5F5F5
-    &__circleblur
-        position: absolute
-        width: 960px
-        height: 778px
+    &__circle-left
         left: -628px
         top: 171px
-        background: rgba(255, 116, 38, 0.1)
-        filter: blur(127px)
-        border-radius: 450px
+    &__cirlce-right
+        right: -733px
+        top: 369px
     &__container
+        position: relative
         display: flex
         flex-direction: column
         padding-top: 130px
         align-items: center
+    &__left-arrow
+        position: absolute
+        bottom: -202px
+        left: -48px
+        transform: rotate(180deg)
+    &__right-planet
+        position: absolute
+        bottom: -152px
+        right: -48px
     &__title
         height: 60px
         margin-bottom: 9px
@@ -392,6 +407,13 @@ html
         box-shadow: 0px 4px 88px rgba(0, 0, 0, 0.05)
         &:last-child
             margin-right: 0px
+.circleblur
+    position: absolute
+    width: 960px
+    height: 778px
+    background: rgba(255, 116, 38, 0.1)
+    filter: blur(127px)
+
 .item
     &__text
         height: 120px
@@ -428,7 +450,6 @@ html
 
 .our-tracks
     height: 700px
-    background-color: #F5F5F5
     &__container
         display: flex
         flex-direction: column
@@ -565,18 +586,39 @@ html
     &__container
         display: flex
         flex-direction: row
+        justify-content: space-between
+        margin-bottom: 86px
     &__column
-        width: 250px
-        h1
-            font-weight: 600
-            font-size: 25px
-            line-height: 29px
-            color: #00052E
-            margin-bottom: 29px
-    &__nav
+        margin-right: 118px
+        &:last-child
+            margin-right: 0px
+    &__h1
+        font-weight: 600
+        font-size: 25px
+        line-height: 29px
+        color: #00052E
+        margin-bottom: 29px
+    &__text
+        width: 318px
+        font-family: 'Roboto'
+        font-style: normal
+        font-weight: 400
+        font-size: 19px
+        line-height: 163%
+        text-align: justify
+        color: #606060
     &__nav-item
         font-weight: 400
         font-size: 19px
         line-height: 22px
         color: #606060
         margin-bottom: 27px
+        &:last-child
+            margin-bottom: 0px
+    &__all-right-reserved
+        color: #606060
+        font-weight: 400
+        font-size: 19px
+        line-height: 22px
+        display: flex
+        justify-content: center

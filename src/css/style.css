@@ -383,6 +383,7 @@ table {
 html {
   font-family: Roboto;
   font-weight: regular;
+  background-color: #F5F5F5;
 }
 
 .container {
@@ -566,6 +567,16 @@ html {
   position: relative;
   height: 985px;
   background-color: F5F5F5;
+}
+.second-section__left-lamp {
+  position: absolute;
+  top: 194px;
+  left: -140px;
+}
+.second-section__right-arrow {
+  position: absolute;
+  top: 153px;
+  right: -140px;
 }
 .second-section__purple-box {
   display: flex;
@@ -769,23 +780,32 @@ html {
 .student-say {
   position: relative;
   height: 689px;
-  background-color: #F5F5F5;
 }
-.student-say__circleblur {
-  position: absolute;
-  width: 960px;
-  height: 778px;
+.student-say__circle-left {
   left: -628px;
   top: 171px;
-  background: rgba(255, 116, 38, 0.1);
-  filter: blur(127px);
-  border-radius: 450px;
+}
+.student-say__cirlce-right {
+  right: -733px;
+  top: 369px;
 }
 .student-say__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-top: 130px;
   align-items: center;
+}
+.student-say__left-arrow {
+  position: absolute;
+  bottom: -202px;
+  left: -48px;
+  transform: rotate(180deg);
+}
+.student-say__right-planet {
+  position: absolute;
+  bottom: -152px;
+  right: -48px;
 }
 .student-say__title {
   height: 60px;
@@ -821,6 +841,14 @@ html {
 }
 .student-say__item:last-child {
   margin-right: 0px;
+}
+
+.circleblur {
+  position: absolute;
+  width: 960px;
+  height: 778px;
+  background: rgba(255, 116, 38, 0.1);
+  filter: blur(127px);
 }
 
 .item__text {
@@ -863,7 +891,6 @@ html {
 
 .our-tracks {
   height: 700px;
-  background-color: #F5F5F5;
 }
 .our-tracks__container {
   display: flex;
@@ -1022,16 +1049,31 @@ html {
 .footer__container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 86px;
 }
 .footer__column {
-  width: 250px;
+  margin-right: 118px;
 }
-.footer__column h1 {
+.footer__column:last-child {
+  margin-right: 0px;
+}
+.footer__h1 {
   font-weight: 600;
   font-size: 25px;
   line-height: 29px;
   color: #00052E;
   margin-bottom: 29px;
+}
+.footer__text {
+  width: 318px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 163%;
+  text-align: justify;
+  color: #606060;
 }
 .footer__nav-item {
   font-weight: 400;
@@ -1039,4 +1081,15 @@ html {
   line-height: 22px;
   color: #606060;
   margin-bottom: 27px;
+}
+.footer__nav-item:last-child {
+  margin-bottom: 0px;
+}
+.footer__all-right-reserved {
+  color: #606060;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

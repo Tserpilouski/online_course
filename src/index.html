@@ -11,7 +11,6 @@
 <body>
     <!-- Main section -->
     <section class="main-section">
-
         <div class="container main-section__nav-container">
             <header class="main-section__header">
                 <a href="#">
@@ -30,7 +29,6 @@
                 <button class="buttons__main-btn">Sign in</button>
             </nav>
         </div>
-
         <div class="container main-section__content-container">
             <div class="left-wrapper">
                 <h1 class="left-wrapper__title titlestyle">The <span>Smart</span><br>
@@ -56,6 +54,8 @@
     <!-- Second section -->
     <section class="second-section">
         <div class="container second-section__container">
+            <img class="second-section__left-lamp" src="icons/casual-life-3d-idea-lamp 1.svg" alt="lamp">
+            <img class="second-section__right-arrow" src="icons/Arrow.svg" alt="Arrow">
             <!-- purple box -->
             <div class="second-section__purple-box">
                 <div class="second-section__purple-item purple-item">
@@ -186,9 +186,13 @@
            
         </div>
     </section>
+    <!-- What Student's say -->
     <section class="student-say">
-        <div class="student-say__circleblur"></div>
+        <div class="student-say__circle-left circleblur"></div>
+        <div class="student-say__cirlce-right circleblur"></div>
         <div class="container student-say__container">
+            <img class="student-say__left-arrow" src="icons/Arrow.svg" alt="Arrow">
+            <img class="student-say__right-planet" src="icons/casual-life-3d-orange-planet-with-disk 1.svg" alt="planet">
             <h4 class="student-say__title">What student’s say</h4>
             <p class="student-say__text">Lorem Ipsum is simply dummy text of the printing.</p>
             <div class="student-say__card-box">
@@ -306,14 +310,17 @@
     <section class="footer">
         <footer class="container footer__container">
             <div class="footer__column">
-                <h1>Book Store</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                <div>
+                    <a href="#">
+                        <img class="main-section__logo" src="icons/logo.svg" alt="logo">
+                    </a>
+                    <h1 class="footer__h1">Book Store</h1>
+                </div>
+                <p class="footer__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy a type specimen book.</p>
-                 
             </div>
-
             <div class="footer__column">
-                <h1>Company</h1>
+                <h1 class="footer__h1">Company</h1>
                 <ul class="footer__nav">
                     <li class="footer__nav-item"> About Us </li>
                     <li class="footer__nav-item"> How to work? </li>
@@ -323,7 +330,7 @@
             </div>
 
             <div class="footer__column">
-                <h1>Courses</h1>
+                <h1 class="footer__h1">Courses</h1>
                 <ul class="footer__nav">
                     <li class="footer__nav-item"> Categories </li>
                     <li class="footer__nav-item"> Ofline Course </li>
@@ -332,7 +339,7 @@
             </div>
 
             <div class="footer__column">
-                <h1>Support</h1>
+                <h1 class="footer__h1">Support</h1>
                 <ul class="footer__nav">
                     <li class="footer__nav-item"> FAQ </li>
                     <li class="footer__nav-item"> Help Center </li>
@@ -342,15 +349,18 @@
             </div>
 
             <div class="footer__column">
-                <h1>Contac Info</h1>
+                <h1 class="footer__h1">Contac Info</h1>
                 <ul class="footer__nav">
                     <li class="footer__nav-item"> +0913-705-3875 </li>
                     <li class="footer__nav-item"> ElizabethJ@jourrapide.com </li>
-                    <li class="footer__nav-item"> 4808 Skinner Hollow Road
+                    <li class="footer__nav-item"> 4808 Skinner Hollow Road <br>
                         Days Creek, OR 97429 </li>
                 </ul>
             </div>
         </footer>
+        <div class="container footer__all-right-reserved">
+            <p>BookStore All Right Reserved, 2022</p>
+        </div>
     </section>
 </body>
 </html>
